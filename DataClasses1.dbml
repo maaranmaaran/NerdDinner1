@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="newdb" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=KTP-DT-KIT008;Initial Catalog=newdb;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="newdbConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.crudemp" Method="crudemp">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Title" Parameter="title" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="EventDate" Parameter="eventDate" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Description" Parameter="description" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="HostedBy" Parameter="hostedBy" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="ContactPhone" Parameter="contactPhone" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Address" Parameter="address" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="Country" Parameter="country" Type="System.String" DbType="NVarChar(150)" />
+    <Parameter Name="Latitude" Parameter="latitude" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Longitude" Parameter="longitude" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Crudoption" Parameter="crudoption" Type="System.String" DbType="NVarChar(50)" />
+    <ElementType Name="crudempResult">
+      <Column Name="DinnerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="EventDate" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="HostedBy" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="ContactPhone" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Country" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Latitude" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Longitude" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>
